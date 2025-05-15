@@ -11,8 +11,8 @@
   <nav class="navbar">
     <div class="navbar-mobile">
       <i class="fas fa-bars mobile-menu-icon"></i>
-      <img src="./logo_Rockstar.png" alt="Rockstar Logo" class="mobile-logo">
-      <img src="./a29e26aa160e7be7e845708c335b3c39.svg" alt="Profile" class="mobile-profile-icon">
+      <img src="assets/logo_Rockstar.png"  width="100" alt="Rockstar Logo" class="logo">
+      <img src="assets/user-icon.svg" alt="Profile" class="mobile-profile-icon">
     </div>
 
     <div class="navbar-desktop">
@@ -57,16 +57,16 @@
       <div class="dropdown-content">
         <h2>Featured Games</h2>
         <div class="games-list">
-          <div class="game-card"><img src="./gta6.jpg" alt="GTA VI"></div>
-          <div class="game-card"><img src="./gta5.jpg" alt="GTA V"></div>
-          <div class="game-card"><img src="./gtaonline.jpg" alt="GTA Online"></div>
-          <div class="game-card"><img src="./reddead2.jpg" alt="Red Dead Redemption 2"></div>
-          <div class="game-card"><img src="./reddead.jpg" alt="Red Dead Redemption"></div>
+          <div class="game-card"><img src="assets/gta6.jpg" alt="GTA VI"></div>
+          <div class="game-card"><img src="assets/gta5.jpg" alt="GTA V"></div>
+          <div class="game-card"><img src="assets/gtaonline.jpg" alt="GTA Online"></div>
+          <div class="game-card"><img src="assets/reddead2.jpg" alt="Red Dead Redemption 2"></div>
+          <div class="game-card"><img src="assets/reddead.jpg" alt="Red Dead Redemption"></div>
         </div>
       </div>
     </div>
   </nav>
 
-  <script src="navbar.js"></script>
+  <script src="navbar/navbar.js"></script>
 </body>
 </html>
