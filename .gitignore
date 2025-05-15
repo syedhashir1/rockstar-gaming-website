@@ -1,25 +1,28 @@
-# CakePHP 3
+# === XAMPP/Server Files ===
+/.htaccess
+/.htpasswd
+/xampp/
+/php.ini
 
-/vendor/*
-/config/app.php
+# === Environment/Config Files ===
+/.env
+/includes/config.php
+/includes/db.php  # If it contains passwords!
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# === Dependency Folders ===
+/vendor/          # Composer (if used)
+/node_modules/    # If using npm
 
-/logs/*
-!/logs/empty
+# === OS/Editor Junk ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# === Logs/Cache ===
+/logs/
+/tmp/
+*.log
+*.cache
