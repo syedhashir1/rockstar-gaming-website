@@ -1,0 +1,87 @@
+.featured-section {
+  width: 100%;
+  background-color: #000;
+  padding: 30px 0;
+}
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  column-gap: 10px;
+  row-gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.div1 {
+  grid-column: 1 / 9;
+  grid-row: 1 / 4;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.div1:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.div2, .div3, .div4, .div5 {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  grid-row: 4 / 7;
+}
+
+.div2 { grid-column: 1 / 3; }
+.div3 { grid-column: 3 / 5; }
+.div4 { grid-column: 5 / 7; }
+.div5 { grid-column: 7 / 9; }
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Light Hover Effect (Like Hero Card) */
+.div2:hover, .div3:hover, .div4:hover, .div5:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.08);
+}
+
+.div2:hover img, .div3:hover img, .div4:hover img, .div5:hover img {
+  transform: scale(1.05);
+}
+
+.div2::after, .div3::after, .div4::after, .div5::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.08); /* lighter overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.div2:hover::after, .div3:hover::after, .div4:hover::after, .div5:hover::after {
+  opacity: 1;
+}

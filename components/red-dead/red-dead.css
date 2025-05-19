@@ -1,0 +1,92 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Main container */
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image section */
+.game-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text content */
+.game-content {
+  max-width: 600px;
+}
+
+.game-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.game-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.download-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #fcb637;
+  color: black;
+  border-color: #fcb637;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .game-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game-image img {
+    max-width: 100%;
+  }
+
+  .game-content h1 {
+    font-size: 2rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

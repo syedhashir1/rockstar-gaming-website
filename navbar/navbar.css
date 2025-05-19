@@ -1,16 +1,19 @@
+
+
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #111;
   color: white;
 }
+
 .logo {
-  display: block !important;
-  width: 150px !important;
-  height: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  border: 2px solid lime;
+  display: block;
+  height: 40px;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Desktop Navbar */
@@ -22,11 +25,6 @@ body {
   background-color: #000;
   height: 90px;
   position: relative;
-}
-
-.logo {
-  height: 40px;
-  width: auto;
 }
 
 .navbar-center {
@@ -95,11 +93,6 @@ body {
 .mobile-menu-icon {
   font-size: 24px;
   cursor: pointer;
-}
-
-.mobile-logo {
-  height: 30px;
-  width: auto;
 }
 
 .mobile-profile-icon {
@@ -176,36 +169,41 @@ body {
   pointer-events: none;
 }
 
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar-desktop {
     display: none;
   }
-  
+
   .navbar-mobile {
     display: flex;
   }
-  
+
   .games-dropdown {
     padding: 20px;
   }
-  
+
   .games-dropdown h2 {
     font-size: 22px;
   }
-  
+
   .game-card {
     width: 120px;
     height: 180px;
   }
 }
 
-@media (min-width: 769px) {
-  .navbar-mobile, .mobile-menu {
-    display: none;
-  }
-  
-  .navbar-desktop {
-    display: flex;
-  }
+/* ===== PURPLE VISITED LINKS FIX ===== */
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active,
+.navbar a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.navbar a:hover {
+  color: yellow !important;
 }

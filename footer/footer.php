@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rockstar Games Clone</title>
+    <title>Rockstar Games </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="footer/footer.css">
 </head>
@@ -12,29 +12,29 @@
     
     <footer class="rockstar-footer">
         <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.facebook.com/rockstargames" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/rockstargames" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/rockstargames/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/rockstargames" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitch.tv/rockstargames" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
         </div>
         
         <div class="footer-links">
             <div class="links-column">
-                <a href="#">Contact</a>
-                <a href="#">Careers</a>
-                <a href="#">Community Guidelines</a>
-                <a href="#">Subscribe</a>
+                <a href="https://www.rockstargames.com/contact">Contact</a>
+                <a href="https://www.rockstargames.com/careers">Careers</a>
+                <a href="https://www.rockstargames.com/community-guidelines">Community Guidelines</a>
+                <a href="./signin.php">Subscribe</a>
             </div>
             <div class="links-column">
-                <a href="#">Corporate</a>
-                <a href="#">Privacy</a>
+                <a href="https://www.rockstargames.com/corpinfo">Corporate</a>
+                <a href="https://www.rockstargames.com/privacy">Privacy</a>
                 <a href="#">Cookie Settings</a>
                 <a href="#">Cookie Policy</a>
             </div>
             <div class="links-column">
-                <a href="#">Legal</a>
-                <a href="#">Do Not Sell or Share My Personal Information</a>
+                <a href="https://www.rockstargames.com/legal">Legal</a>
+                <a href="https://www.rockstargames.com/ccpa">Do Not Sell or Share My Personal Information</a>
             </div>
         </div>
         <div class="footer-bottom">

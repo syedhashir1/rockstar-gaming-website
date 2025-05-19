@@ -1,0 +1,138 @@
+/* Complete Reset to Remove All Default Borders */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+/* Videos Section - Precise Styling */
+.videos-section {
+  background-color: #000;
+  padding: 40px 20px;
+  color: #fff;
+   position: relative;
+    z-index: 1; /* Lower than card slider */
+}
+
+.videos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Title - Aligned with Cards */
+.section-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  padding-left: 10px; /* Aligns with card content */
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Video Cards Container */
+.video-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+
+/* Individual Video Card */
+.video-card {
+    border-radius: 10px;
+  width: 100%;
+  max-width: 430px;
+  background: #111;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+   
+    z-index: 1
+}
+
+/* Subtle White Border */
+.video-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card:hover::before {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Thumbnail */
+.video-thumbnail {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video Info - Left Aligned */
+.video-info {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.video-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.video-subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+  
+  .video-title {
+    font-size: 16px;
+  }
+  
+  .video-subtitle {
+    font-size: 20px;
+  }
+}

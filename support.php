@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockstar</title>
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 
     <!-- Main CSS first -->
     <link rel="stylesheet" href="css/styles.css">
@@ -20,20 +19,13 @@
     <!-- Main content area -->
     <main class="container">
 
-        <!-- Hero Section (Slideshow) -->
-        <section class="hero-section">
-            <?php include 'components/hero/Hero.php'; ?>  
-        </section>
-
-        <!-- Newswire Section -->
+      <!-- Newswire Section -->
         <section class="newswire-section">
-            <?php include 'components/newswire/Newswire.php'; ?>
+            <?php include 'components/support/support.php'; ?>
         </section>
 
-        <!-- Featured Games Section -->
-        <section class="featured-games-section">
-            <?php include 'components/featured-games/Featured.php'; ?>  
-        </section>
+        
+
 
     </main>
 

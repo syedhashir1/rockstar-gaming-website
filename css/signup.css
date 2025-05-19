@@ -1,0 +1,258 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Sign Up Container */
+.signup-container {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    color: #fff;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-header .logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.signup-header h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alert.error {
+    background-color: #5c2a2a;
+    color: #ff6b6b;
+}
+
+.alert.success {
+    background-color: #2a5c3e;
+    color: #6bff8d;
+}
+
+/* Form Styles */
+.signup-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-group input:focus {
+    border-color: #fcb637;
+    outline: none;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #444;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #fcb637;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Sign Up Button */
+.signup-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #fcb637;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #e0a030;
+}
+
+/* Social Sign Up */
+.social-signup {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-signup p {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #444;
+}
+
+/* Footer */
+.signup-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-footer a {
+    color: #fcb637;
+    text-decoration: none;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}
+
+.legal-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.legal-links a {
+    color: #777;
+}
+
+.legal-links a:hover {
+    color: #fcb637;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 30px 20px;
+    }
+    
+    .signup-header .logo {
+        height: 40px;
+    }
+    
+    .signup-header h1 {
+        font-size: 24px;
+    }
+    
+    .form-group input {
+        padding: 10px 12px;
+    }
+    
+    .signup-button {
+        padding: 12px;
+    }
+}

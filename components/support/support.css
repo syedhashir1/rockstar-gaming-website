@@ -1,0 +1,194 @@
+/* Support Component Styles */
+.support-section {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    max-width: 1400px; /* Increased max width */
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Logo */
+.support-logo-container {
+    text-align: center;
+    padding: 20px 0 40px; /* More padding */
+}
+
+.support-logo {
+    height: 60px; /* Larger logo */
+    width: auto;
+}
+
+/* Online Services Status */
+.online-services-status {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* More spacing */
+    margin: 40px 0; /* More margin */
+    flex-wrap: wrap;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px; /* Larger text */
+}
+
+.status-item i {
+    color: #4CAF50;
+    font-size: 22px; /* Larger icon */
+}
+
+.status-item em {
+    color: #4CAF50;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Search Section */
+.support-search {
+    display: flex;
+    max-width: 800px; /* Wider search */
+    margin: 0 auto 50px; /* More margin */
+    justify-content: center;
+}
+
+.support-search-input {
+    flex-grow: 1;
+    padding: 15px 25px; /* Larger padding */
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px; /* Slightly rounded */
+    font-size: 18px; /* Larger text */
+    max-width: 600px; /* Wider input */
+}
+
+.support-search-button {
+    padding: 15px 30px; /* Larger button */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0; /* Slightly rounded */
+    cursor: pointer;
+    font-size: 18px; /* Larger text */
+}
+
+/* Support Title */
+.support-main-title {
+    text-align: center;
+    margin-bottom: 50px; /* More spacing */
+    font-size: 28px; /* Larger title */
+    font-weight: normal;
+    color: #333;
+}
+
+/* Cards Grid - UPDATED FOR LARGER CARDS */
+.support-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Wider cards */
+    gap: 40px; /* More spacing */
+    padding: 0 20px;
+}
+
+.support-card {
+    border-radius: 10px; /* Slightly more rounded */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Deeper shadow */
+    border: 1px solid #eee; /* Subtle border */
+    
+}
+
+.support-card:hover {
+    transform: translateY(-8px); /* More lift on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* More prominent hover shadow */
+}
+
+.support-card img {
+    width: 100%;
+    height: 400px; /* Taller images */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover img {
+    transform: scale(1.03); /* Slight zoom effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .support-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .support-section {
+        padding: 25px;
+    }
+    
+    .online-services-status {
+        gap: 30px;
+    }
+    
+    .support-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .support-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    
+    .status-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .online-services-status {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .support-search {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    .support-search-input {
+        border-right: 1px solid #ddd;
+        border-radius: 6px 6px 0 0;
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+    
+    .support-search-button {
+        border-radius: 0 0 6px 6px;
+        width: 100%;
+        padding: 12px 20px;
+    }
+    
+    .support-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .support-card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .support-main-title {
+        font-size: 24px;
+    }
+    
+    .support-logo {
+        height: 50px;
+    }
+}
